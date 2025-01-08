@@ -1,0 +1,5 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	TESTX_H7YRLADXX_S1_L001_R1_001_val_1	/Users/kowalski/RNAseq/output/fastqc_trimmed/TESTX_H7YRLADXX_S1_L001_R1_001_val_1_fastqc.zip
+FastQC	all_sections	TESTX_H7YRLADXX_S1_L001_R2_001_val_2	/Users/kowalski/RNAseq/output/fastqc_trimmed/TESTX_H7YRLADXX_S1_L001_R2_001_val_2_fastqc.zip
+FastQC	all_sections	TESTX_H7YRLADXX_S1_L002_R2_001_val_2	/Users/kowalski/RNAseq/output/fastqc_trimmed/TESTX_H7YRLADXX_S1_L002_R2_001_val_2_fastqc.zip
+FastQC	all_sections	TESTX_H7YRLADXX_S1_L002_R1_001_val_1	/Users/kowalski/RNAseq/output/fastqc_trimmed/TESTX_H7YRLADXX_S1_L002_R1_001_val_1_fastqc.zip

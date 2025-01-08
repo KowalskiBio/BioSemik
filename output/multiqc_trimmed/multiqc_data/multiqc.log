@@ -1,0 +1,2 @@
+[2025-01-08 08:11:43,021] multiqc.core.file_search                           [INFO   ]  Search path: /Users/kowalski/RNAseq/output/fastqc_trimmed
+[2025-01-08 08:11:43,200] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 4 reports

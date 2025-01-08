@@ -1,0 +1,433 @@
+Script started at: Wed Jan  8 10:16:39 CET 2025
+Do you want to check the quality of your data? (yes/no): Do you want to trim your data? (yes/no): You have opted not to trim your data.
+Please ensure your data is of good quality or already trimmed before proceeding.
+For further analysis, make sure that the data is located in the ./data/trimmed_fastq directory.
+For annotation, do you want to use (e)nsembl or (r)efseq? (e/r): After Salmon is done, do you want to analyze your data? (yes/no): Please enter the transcript ID(s) of interest in NM format (e.g., NM_020984.4).
+If multiple IDs are to be searched for, separate them with space: 
+You have selected the following options:
+  - Check quality of data: no
+  - Trim data: no
+  - Database for annotation: RefSeq
+  - Analyze data: yes
+  - Transcript IDs: NM_000021.4
+Do you wish to continue with these settings? (yes/no): Configuration complete. Proceeding with the script...
+Installing Conda...
+
+>>> Conda is already installed. Skipping installation.
+
+Conda successfully detected. Proceeding to the next step.
+Creating Conda environment. This will take some time.
+Conda environment 'raptor_quant' already exists. Do you want to (s)kip or (u)pdate it? [s/u]: Skipping environment creation...
+Conda environment 'raptor_quant' is ready.
+Ensuring Conda is activated...
+Initializing Conda...
+no change     /Users/kowalski/.miniconda3/condabin/conda
+no change     /Users/kowalski/.miniconda3/bin/conda
+no change     /Users/kowalski/.miniconda3/bin/conda-env
+no change     /Users/kowalski/.miniconda3/bin/activate
+no change     /Users/kowalski/.miniconda3/bin/deactivate
+no change     /Users/kowalski/.miniconda3/etc/profile.d/conda.sh
+no change     /Users/kowalski/.miniconda3/etc/fish/conf.d/conda.fish
+no change     /Users/kowalski/.miniconda3/shell/condabin/Conda.psm1
+no change     /Users/kowalski/.miniconda3/shell/condabin/conda-hook.ps1
+no change     /Users/kowalski/.miniconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /Users/kowalski/.miniconda3/etc/profile.d/conda.csh
+no change     /Users/kowalski/.bash_profile
+No action taken.
+Activating the Conda environment...
+Conda environment detected. Proceeding to the next step.
+Skipping second QC as either quality check or trimming was not selected.
+Running Salmon...
+Salmon is using RefSeq as the annotation of choice.
+Activating the power of Salmon...
+Running Salmon for TESTX_H7YRLADXX_S1_L001_R1_001...
+Version Server Response: Not Found
+### salmon (selective-alignment-based) v1.10.3
+### [ program ] => salmon 
+### [ command ] => quant 
+### [ index ] => { ./data/salmon/index/index_salmon_NCBI_k23 }
+### [ libType ] => { A }
+### [ mates1 ] => { ./data/trimmed_fastq/TESTX_H7YRLADXX_S1_L001_R1_001_val_1.fq.gz }
+### [ mates2 ] => { ./data/trimmed_fastq/TESTX_H7YRLADXX_S1_L001_R2_001_val_2.fq.gz }
+### [ validateMappings ] => { }
+### [ output ] => { ./output/salmon_results/TESTX_H7YRLADXX_S1_L001_R1_001 }
+Logs will be written to ./output/salmon_results/TESTX_H7YRLADXX_S1_L001_R1_001/logs
+[2025-01-08 10:17:10.494] [jointLog] [info] setting maxHashResizeThreads to 8
+[2025-01-08 10:17:10.494] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2025-01-08 10:17:10.494] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
+[2025-01-08 10:17:10.495] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
+[2025-01-08 10:17:10.495] [jointLog] [info] parsing read library format
+[2025-01-08 10:17:10.495] [jointLog] [info] There is 1 library.
+[2025-01-08 10:17:10.497] [jointLog] [info] Loading pufferfish index
+[2025-01-08 10:17:10.497] [jointLog] [info] Loading dense pufferfish index.
+-----------------------------------------
+| Loading contig table | Time = 24.262 s
+-----------------------------------------
+size = 61875992
+-----------------------------------------
+| Loading contig offsets | Time = 215.37 ms
+-----------------------------------------
+-----------------------------------------
+| Loading reference lengths | Time = 1.9177 ms
+-----------------------------------------
+-----------------------------------------
+| Loading mphf table | Time = 1.5641 s
+-----------------------------------------
+size = 3863224092
+Number of ones: 61875991
+Number of ones per inventory item: 512
+Inventory entries filled: 120852
+-----------------------------------------
+| Loading contig boundaries | Time = 7.9047 s
+-----------------------------------------
+size = 3863224092
+-----------------------------------------
+| Loading sequence | Time = 902.61 ms
+-----------------------------------------
+size = 2501952290
+-----------------------------------------
+| Loading positions | Time = 8.459 s
+-----------------------------------------
+size = 4001515331
+-----------------------------------------
+| Loading reference sequence | Time = 905.56 ms
+-----------------------------------------
+-----------------------------------------
+| Loading reference accumulative lengths | Time = 3.2268 ms
+-----------------------------------------
+
+
+
+
+[2025-01-08 10:17:54.718] [jointLog] [info] done
+[2025-01-08 10:17:54.799] [jointLog] [info] Index contained 181,766 targets
+[2025-01-08 10:17:54.846] [jointLog] [info] Number of decoys : 705
+[2025-01-08 10:17:54.846] [jointLog] [info] First decoy index : 181,061 
+
+
+
+
+
+
+
+
+[2025-01-08 10:18:29.816] [jointLog] [info] Computed 4,149 rich equivalence classes for further processing
+[2025-01-08 10:18:29.816] [jointLog] [info] Counted 4,820 total reads in the equivalence classes 
+[2025-01-08 10:18:29.825] [jointLog] [info] Number of mappings discarded because of alignment score : 4,696
+[2025-01-08 10:18:29.825] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 12,015
+[2025-01-08 10:18:29.825] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 11,929
+[2025-01-08 10:18:29.825] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 34
+[2025-01-08 10:18:29.862] [jointLog] [warning] Only 4820 fragments were mapped, but the number of burn-in fragments was set to 5000000.
+The effective lengths have been computed using the observed mappings.
+
+[2025-01-08 10:18:29.862] [jointLog] [info] Mapping rate = 19.5593%
+
+[2025-01-08 10:18:29.863] [jointLog] [info] finished quantifyLibrary()
+[2025-01-08 10:18:29.863] [jointLog] [info] Starting optimizer
+[2025-01-08 10:18:29.992] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2025-01-08 10:18:30.104] [jointLog] [info] iteration = 0 | max rel diff. = 1.65392
+[2025-01-08 10:18:39.570] [jointLog] [info] iteration = 100 | max rel diff. = 1.07946e-07
+[2025-01-08 10:18:39.583] [jointLog] [info] Finished optimizer
+[2025-01-08 10:18:39.583] [jointLog] [info] writing output 
+
+Salmon quantification completed for TESTX_H7YRLADXX_S1_L001_R1_001
+Activating the power of Salmon...
+Running Salmon for TESTX_H7YRLADXX_S1_L002_R1_001...
+Version Server Response: Not Found
+### salmon (selective-alignment-based) v1.10.3
+### [ program ] => salmon 
+### [ command ] => quant 
+### [ index ] => { ./data/salmon/index/index_salmon_NCBI_k23 }
+### [ libType ] => { A }
+### [ mates1 ] => { ./data/trimmed_fastq/TESTX_H7YRLADXX_S1_L002_R1_001_val_1.fq.gz }
+### [ mates2 ] => { ./data/trimmed_fastq/TESTX_H7YRLADXX_S1_L002_R2_001_val_2.fq.gz }
+### [ validateMappings ] => { }
+### [ output ] => { ./output/salmon_results/TESTX_H7YRLADXX_S1_L002_R1_001 }
+Logs will be written to ./output/salmon_results/TESTX_H7YRLADXX_S1_L002_R1_001/logs
+[2025-01-08 10:18:45.778] [jointLog] [info] setting maxHashResizeThreads to 8
+[2025-01-08 10:18:45.778] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2025-01-08 10:18:45.778] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
+[2025-01-08 10:18:45.778] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
+[2025-01-08 10:18:45.778] [jointLog] [info] parsing read library format
+[2025-01-08 10:18:45.778] [jointLog] [info] There is 1 library.
+[2025-01-08 10:18:45.779] [jointLog] [info] Loading pufferfish index
+[2025-01-08 10:18:45.779] [jointLog] [info] Loading dense pufferfish index.
+-----------------------------------------
+| Loading contig table | Time = 22.104 s
+-----------------------------------------
+size = 61875992
+-----------------------------------------
+| Loading contig offsets | Time = 207.52 ms
+-----------------------------------------
+-----------------------------------------
+| Loading reference lengths | Time = 1.8945 ms
+-----------------------------------------
+-----------------------------------------
+| Loading mphf table | Time = 1.7536 s
+-----------------------------------------
+size = 3863224092
+Number of ones: 61875991
+Number of ones per inventory item: 512
+Inventory entries filled: 120852
+-----------------------------------------
+| Loading contig boundaries | Time = 7.9866 s
+-----------------------------------------
+size = 3863224092
+-----------------------------------------
+| Loading sequence | Time = 699.41 ms
+-----------------------------------------
+size = 2501952290
+-----------------------------------------
+| Loading positions | Time = 8.596 s
+-----------------------------------------
+size = 4001515331
+-----------------------------------------
+| Loading reference sequence | Time = 897.61 ms
+-----------------------------------------
+-----------------------------------------
+| Loading reference accumulative lengths | Time = 2.8453 ms
+-----------------------------------------
+
+
+
+
+[2025-01-08 10:19:28.393] [jointLog] [info] done
+[2025-01-08 10:19:28.463] [jointLog] [info] Index contained 181,766 targets
+[2025-01-08 10:19:28.505] [jointLog] [info] Number of decoys : 705
+[2025-01-08 10:19:28.505] [jointLog] [info] First decoy index : 181,061 
+
+
+
+
+
+
+
+
+
+
+[2025-01-08 10:20:01.894] [jointLog] [info] Computed 4,130 rich equivalence classes for further processing
+[2025-01-08 10:20:01.894] [jointLog] [info] Counted 4,858 total reads in the equivalence classes 
+[2025-01-08 10:20:01.901] [jointLog] [warning] 0.00405811% of fragments were shorter than the k used to build the index.
+If this fraction is too large, consider re-building the index with a smaller k.
+The minimum read size found was 20.
+
+
+[2025-01-08 10:20:01.901] [jointLog] [info] Number of mappings discarded because of alignment score : 3,958
+[2025-01-08 10:20:01.901] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 12,078
+[2025-01-08 10:20:01.901] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 11,988
+[2025-01-08 10:20:01.901] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 43
+[2025-01-08 10:20:01.932] [jointLog] [warning] Only 4858 fragments were mapped, but the number of burn-in fragments was set to 5000000.
+The effective lengths have been computed using the observed mappings.
+
+[2025-01-08 10:20:01.932] [jointLog] [info] Mapping rate = 19.7143%
+
+[2025-01-08 10:20:01.933] [jointLog] [info] finished quantifyLibrary()
+[2025-01-08 10:20:01.938] [jointLog] [info] Starting optimizer
+[2025-01-08 10:20:02.029] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2025-01-08 10:20:02.142] [jointLog] [info] iteration = 0 | max rel diff. = 1.68059
+[2025-01-08 10:20:11.548] [jointLog] [info] iteration = 100 | max rel diff. = 0.000148588
+[2025-01-08 10:20:11.565] [jointLog] [info] Finished optimizer
+[2025-01-08 10:20:11.565] [jointLog] [info] writing output 
+
+Salmon quantification completed for TESTX_H7YRLADXX_S1_L002_R1_001
+Activating the power of Salmon...
+Running Salmon for TESTX_H7YRLADXX_S1_L001_R1_001...
+Version Server Response: Not Found
+### salmon (selective-alignment-based) v1.10.3
+### [ program ] => salmon 
+### [ command ] => quant 
+### [ index ] => { ./data/salmon/index/index_salmon_NCBI_k23 }
+### [ libType ] => { A }
+### [ mates1 ] => { ./data/trimmed_fastq/TESTX_H7YRLADXX_S1_L001_R1_001_val_1.fq.gz }
+### [ mates2 ] => { ./data/trimmed_fastq/TESTX_H7YRLADXX_S1_L001_R2_001_val_2.fq.gz }
+### [ validateMappings ] => { }
+### [ output ] => { ./output/salmon_results/TESTX_H7YRLADXX_S1_L001_R1_001 }
+Logs will be written to ./output/salmon_results/TESTX_H7YRLADXX_S1_L001_R1_001/logs
+[2025-01-08 10:20:17.875] [jointLog] [info] setting maxHashResizeThreads to 8
+[2025-01-08 10:20:17.875] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2025-01-08 10:20:17.875] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
+[2025-01-08 10:20:17.875] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
+[2025-01-08 10:20:17.875] [jointLog] [info] parsing read library format
+[2025-01-08 10:20:17.875] [jointLog] [info] There is 1 library.
+[2025-01-08 10:20:17.876] [jointLog] [info] Loading pufferfish index
+[2025-01-08 10:20:17.876] [jointLog] [info] Loading dense pufferfish index.
+-----------------------------------------
+| Loading contig table | Time = 17.974 s
+-----------------------------------------
+size = 61875992
+-----------------------------------------
+| Loading contig offsets | Time = 196.23 ms
+-----------------------------------------
+-----------------------------------------
+| Loading reference lengths | Time = 2.4985 ms
+-----------------------------------------
+-----------------------------------------
+| Loading mphf table | Time = 1.7371 s
+-----------------------------------------
+size = 3863224092
+Number of ones: 61875991
+Number of ones per inventory item: 512
+Inventory entries filled: 120852
+-----------------------------------------
+| Loading contig boundaries | Time = 7.9547 s
+-----------------------------------------
+size = 3863224092
+-----------------------------------------
+| Loading sequence | Time = 691.45 ms
+-----------------------------------------
+size = 2501952290
+-----------------------------------------
+| Loading positions | Time = 8.602 s
+-----------------------------------------
+size = 4001515331
+-----------------------------------------
+| Loading reference sequence | Time = 897.12 ms
+-----------------------------------------
+-----------------------------------------
+| Loading reference accumulative lengths | Time = 2.4674 ms
+-----------------------------------------
+
+
+
+
+[2025-01-08 10:20:55.938] [jointLog] [info] done
+[2025-01-08 10:20:56.017] [jointLog] [info] Index contained 181,766 targets
+[2025-01-08 10:20:56.065] [jointLog] [info] Number of decoys : 705
+[2025-01-08 10:20:56.065] [jointLog] [info] First decoy index : 181,061 
+
+
+
+
+
+
+
+
+[2025-01-08 10:21:30.850] [jointLog] [info] Computed 4,149 rich equivalence classes for further processing
+[2025-01-08 10:21:30.850] [jointLog] [info] Counted 4,820 total reads in the equivalence classes 
+[2025-01-08 10:21:30.865] [jointLog] [info] Number of mappings discarded because of alignment score : 4,696
+[2025-01-08 10:21:30.865] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 12,015
+[2025-01-08 10:21:30.865] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 11,929
+[2025-01-08 10:21:30.865] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 34
+[2025-01-08 10:21:30.897] [jointLog] [warning] Only 4820 fragments were mapped, but the number of burn-in fragments was set to 5000000.
+The effective lengths have been computed using the observed mappings.
+
+[2025-01-08 10:21:30.897] [jointLog] [info] Mapping rate = 19.5593%
+
+[2025-01-08 10:21:30.897] [jointLog] [info] finished quantifyLibrary()
+[2025-01-08 10:21:30.898] [jointLog] [info] Starting optimizer
+[2025-01-08 10:21:30.975] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2025-01-08 10:21:31.127] [jointLog] [info] iteration = 0 | max rel diff. = 1.65479
+[2025-01-08 10:21:40.607] [jointLog] [info] iteration = 100 | max rel diff. = 8.45651e-08
+[2025-01-08 10:21:40.621] [jointLog] [info] Finished optimizer
+[2025-01-08 10:21:40.621] [jointLog] [info] writing output 
+
+Salmon quantification completed for TESTX_H7YRLADXX_S1_L001_R1_001
+Activating the power of Salmon...
+Running Salmon for TESTX_H7YRLADXX_S1_L002_R1_001...
+Version Server Response: Not Found
+### salmon (selective-alignment-based) v1.10.3
+### [ program ] => salmon 
+### [ command ] => quant 
+### [ index ] => { ./data/salmon/index/index_salmon_NCBI_k23 }
+### [ libType ] => { A }
+### [ mates1 ] => { ./data/trimmed_fastq/TESTX_H7YRLADXX_S1_L002_R1_001_val_1.fq.gz }
+### [ mates2 ] => { ./data/trimmed_fastq/TESTX_H7YRLADXX_S1_L002_R2_001_val_2.fq.gz }
+### [ validateMappings ] => { }
+### [ output ] => { ./output/salmon_results/TESTX_H7YRLADXX_S1_L002_R1_001 }
+Logs will be written to ./output/salmon_results/TESTX_H7YRLADXX_S1_L002_R1_001/logs
+[2025-01-08 10:21:47.077] [jointLog] [info] setting maxHashResizeThreads to 8
+[2025-01-08 10:21:47.077] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2025-01-08 10:21:47.077] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
+[2025-01-08 10:21:47.077] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
+[2025-01-08 10:21:47.077] [jointLog] [info] parsing read library format
+[2025-01-08 10:21:47.077] [jointLog] [info] There is 1 library.
+[2025-01-08 10:21:47.077] [jointLog] [info] Loading pufferfish index
+[2025-01-08 10:21:47.078] [jointLog] [info] Loading dense pufferfish index.
+-----------------------------------------
+| Loading contig table | Time = 19.021 s
+-----------------------------------------
+size = 61875992
+-----------------------------------------
+| Loading contig offsets | Time = 226.3 ms
+-----------------------------------------
+-----------------------------------------
+| Loading reference lengths | Time = 1.8619 ms
+-----------------------------------------
+-----------------------------------------
+| Loading mphf table | Time = 1.7113 s
+-----------------------------------------
+size = 3863224092
+Number of ones: 61875991
+Number of ones per inventory item: 512
+Inventory entries filled: 120852
+-----------------------------------------
+| Loading contig boundaries | Time = 7.9375 s
+-----------------------------------------
+size = 3863224092
+-----------------------------------------
+| Loading sequence | Time = 698.69 ms
+-----------------------------------------
+size = 2501952290
+-----------------------------------------
+| Loading positions | Time = 8.6303 s
+-----------------------------------------
+size = 4001515331
+-----------------------------------------
+| Loading reference sequence | Time = 899.23 ms
+-----------------------------------------
+-----------------------------------------
+| Loading reference accumulative lengths | Time = 4.1346 ms
+-----------------------------------------
+[2025-01-08 10:22:26.213] [jointLog] [info] done
+[2025-01-08 10:22:26.290] [jointLog] [info] Index contained 181,766 targets
+[2025-01-08 10:22:26.336] [jointLog] [info] Number of decoys : 705
+[2025-01-08 10:22:26.337] [jointLog] [info] First decoy index : 181,061 
+
+
+
+
+
+
+
+
+[2025-01-08 10:23:03.144] [jointLog] [info] Computed 4,130 rich equivalence classes for further processing
+[2025-01-08 10:23:03.144] [jointLog] [info] Counted 4,858 total reads in the equivalence classes 
+
+
+
+
+
+
+[2025-01-08 10:23:03.162] [jointLog] [warning] 0.00405811% of fragments were shorter than the k used to build the index.
+If this fraction is too large, consider re-building the index with a smaller k.
+The minimum read size found was 20.
+
+
+[2025-01-08 10:23:03.162] [jointLog] [info] Number of mappings discarded because of alignment score : 3,958
+[2025-01-08 10:23:03.162] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 12,078
+[2025-01-08 10:23:03.162] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 11,988
+[2025-01-08 10:23:03.162] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 43
+[2025-01-08 10:23:03.241] [jointLog] [warning] Only 4858 fragments were mapped, but the number of burn-in fragments was set to 5000000.
+The effective lengths have been computed using the observed mappings.
+
+[2025-01-08 10:23:03.241] [jointLog] [info] Mapping rate = 19.7143%
+
+[2025-01-08 10:23:03.242] [jointLog] [info] finished quantifyLibrary()
+[2025-01-08 10:23:03.243] [jointLog] [info] Starting optimizer
+[2025-01-08 10:23:03.358] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2025-01-08 10:23:03.486] [jointLog] [info] iteration = 0 | max rel diff. = 1.68077
+[2025-01-08 10:23:13.365] [jointLog] [info] iteration = 100 | max rel diff. = 0.000143784
+[2025-01-08 10:23:13.383] [jointLog] [info] Finished optimizer
+[2025-01-08 10:23:13.383] [jointLog] [info] writing output 
+
+Salmon quantification completed for TESTX_H7YRLADXX_S1_L002_R1_001
+Salmon quantification completed successfully.
+Creating combined table from your Salmon results...
+File ./output/salmon_results/TESTX/quant.sf not found!
+Results have been combined into ./output/salmon_results/combined_results.tsv
+Analysis completed successfully. Proceeding to the next step.
+Preparing the search for your transcripts...
+Using the pattern: |NM_000021.4
+Filtered results have been written to ./output/salmon_results/filtered_results.tsv
+Final analysis completed successfully.
+All scripts completed successfully! Thank you for using the RaptorQuant pipeline.

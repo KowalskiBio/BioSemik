@@ -1,0 +1,3 @@
+[2025-01-08 08:11:25,305] multiqc.core.file_search                           [INFO   ]  Search path: /Users/kowalski/RNAseq/output/fastqc_raw
+[2025-01-08 08:11:25,481] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 4 reports
+[2025-01-08 08:11:25,634] multiqc.core.write_results                         [INFO   ]  Existing reports found, adding suffix to filenames. Use '--force' to overwrite.

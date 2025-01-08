@@ -1,0 +1,80 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: ./data/raw_fastq/TESTX_H7YRLADXX_S1_L001_R1_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 5.0
+Python version: 3.12.8
+Number of cores used for trimming: 6
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Using Nextera adapter for trimming (count: 1). Second best hit was smallRNA (count: 0)
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Output file will be GZIP compressed
+
+
+This is cutadapt 5.0 with Python 3.12.8
+Command line parameters: -j 6 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA ./data/raw_fastq/TESTX_H7YRLADXX_S1_L001_R1_001.fastq.gz
+Processing single-end reads on 6 cores ...
+
+=== Summary ===
+
+Total reads processed:                  25,000
+Reads with adapters:                     7,750 (31.0%)
+Reads written (passing filters):        25,000 (100.0%)
+
+Total basepairs processed:     2,525,000 bp
+Quality-trimmed:                  10,353 bp (0.4%)
+Total written (filtered):      2,502,714 bp (99.1%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 7750 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 21.9%
+  C: 27.3%
+  G: 21.7%
+  T: 29.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	5234	6250.0	0	5234
+2	1725	1562.5	0	1725
+3	595	390.6	0	595
+4	130	97.7	0	130
+5	33	24.4	0	33
+6	12	6.1	0	12
+7	2	1.5	0	2
+8	2	0.4	0	2
+9	1	0.1	0	1
+10	1	0.0	1	0 1
+16	1	0.0	1	0 1
+17	1	0.0	1	0 1
+23	1	0.0	1	0 1
+27	1	0.0	1	0 1
+28	1	0.0	1	0 1
+29	1	0.0	1	0 1
+33	1	0.0	1	0 1
+35	1	0.0	1	0 1
+37	1	0.0	1	0 1
+49	1	0.0	1	0 1
+54	1	0.0	1	1
+61	1	0.0	1	0 1
+74	1	0.0	1	0 1
+76	1	0.0	1	0 1
+99	1	0.0	1	0 1
+
+RUN STATISTICS FOR INPUT FILE: ./data/raw_fastq/TESTX_H7YRLADXX_S1_L001_R1_001.fastq.gz
+=============================================
+25000 sequences processed in total
+

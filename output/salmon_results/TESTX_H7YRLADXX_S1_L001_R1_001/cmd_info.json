@@ -1,0 +1,10 @@
+{
+    "salmon_version": "1.10.3",
+    "index": "./data/salmon/index/index_salmon_NCBI_k23",
+    "libType": "A",
+    "mates1": "./data/trimmed_fastq/TESTX_H7YRLADXX_S1_L001_R1_001_val_1.fq.gz",
+    "mates2": "./data/trimmed_fastq/TESTX_H7YRLADXX_S1_L001_R2_001_val_2.fq.gz",
+    "validateMappings": [],
+    "output": "./output/salmon_results/TESTX_H7YRLADXX_S1_L001_R1_001",
+    "auxDir": "aux_info"
+}

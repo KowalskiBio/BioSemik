@@ -1,0 +1,66 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: ./data/raw_fastq/TESTX_H7YRLADXX_S1_L002_R1_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 5.0
+Python version: 3.12.8
+Number of cores used for trimming: 6
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Unable to auto-detect most prominent adapter from the first specified file (count Nextera: 0, count smallRNA: 0, count Illumina: 0)
+Defaulting to Illumina universal adapter ( AGATCGGAAGAGC ). Specify -a SEQUENCE to avoid this behavior).
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; default (inconclusive auto-detection))
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Output file will be GZIP compressed
+
+
+This is cutadapt 5.0 with Python 3.12.8
+Command line parameters: -j 6 -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGC ./data/raw_fastq/TESTX_H7YRLADXX_S1_L002_R1_001.fastq.gz
+Processing single-end reads on 6 cores ...
+
+=== Summary ===
+
+Total reads processed:                  25,000
+Reads with adapters:                       236 (0.9%)
+Reads written (passing filters):        25,000 (100.0%)
+
+Total basepairs processed:     2,525,000 bp
+Quality-trimmed:                  11,370 bp (0.5%)
+Total written (filtered):      2,512,791 bp (99.5%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 236 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 40.3%
+  C: 28.4%
+  G: 17.8%
+  T: 11.4%
+  none/other: 2.1%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	141	6250.0	0	141
+2	77	1562.5	0	77
+3	10	390.6	0	10
+4	1	97.7	0	1
+36	1	0.0	1	0 1
+56	1	0.0	1	0 1
+72	1	0.0	1	0 1
+74	2	0.0	1	0 2
+97	1	0.0	1	0 1
+101	1	0.0	1	0 1
+
+RUN STATISTICS FOR INPUT FILE: ./data/raw_fastq/TESTX_H7YRLADXX_S1_L002_R1_001.fastq.gz
+=============================================
+25000 sequences processed in total
+
