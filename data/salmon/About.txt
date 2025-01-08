@@ -1,0 +1,15 @@
+# Indices for Salmon
+Indices for Salmon were made based on the information provided by the creator of Salmon here: https://salmon.readthedocs.io/en/latest/salmon.html#preparing-transcriptome-indices-mapping-based-modeand 
+And mostly here:
+https://combine-lab.github.io/alevin-tutorial/2019/selective-alignment/.
+
+k=23, concatenated genome and transcriptome file created, decoys used.
+
+# RefSeq
+DNA: GCF_000001405.40_GRCh38.p14_genomic.fna
+Transcripts: GRCh38_latest_rna.fna
+
+# Ensembl
+DNA: Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
+Transcripts: Homo_sapiens.GRCh38.cdna.all.fa.gz
+
