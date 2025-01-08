@@ -9,7 +9,7 @@ mkdir -p "$output_dir"
 
 # Ensure that Conda is activated
 source $(conda info --base)/etc/profile.d/conda.sh
-conda activate salmon
+conda activate raptor_quant
 
 ## Ensure that FASTQC is installed
 if ! command -v fastqc &> /dev/null; then

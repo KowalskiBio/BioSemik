@@ -156,6 +156,10 @@ echo "Running Salmon..."
 "$script_dir/Salmon.sh"
 echo "Salmon quantification completed successfully."
 
+if [[ "$check_quality" == "yes" ]]; then
+    echo "Checking the quality of Salmon results..."
+    "$script_dir/MULTIQC3.sh"
+    echo "Quality check completed. Proceeding to the next step."
 
 if [[ "$analyze_data" == "yes" ]]; then
     echo "Creating combined table from your Salmon results..."

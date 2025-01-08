@@ -1,0 +1,4 @@
+[2025-01-08 17:37:17,935] multiqc.core.file_search                           [INFO   ]  Search path: /Users/kowalski/RNAseq/output/salmon_results
+[2025-01-08 17:37:18,041] multiqc.modules.salmon.salmon                      [INFO   ]  Found 2 meta reports
+[2025-01-08 17:37:18,042] multiqc.modules.salmon.salmon                      [INFO   ]  Found 2 fragment length distributions
+[2025-01-08 17:37:18,042] multiqc.modules.salmon.salmon                      [INFO   ]  Found 2 library format counts reports

@@ -1,0 +1,3 @@
+Sample	salmon-percent_mapped	salmon-num_mapped	salmon-library_types	salmon-compatible_fragment_ratio	salmon-strand_mapping_bias
+TESTX_H7YRLADXX_S1_L001_R1_001	19.55930690256868	0.00482	IU	100.0	0.4908652188900379
+TESTX_H7YRLADXX_S1_L002_R1_001	19.714308903498093	0.0048579999999999995	IU	100.0	0.49770884737398663

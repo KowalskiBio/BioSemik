@@ -61,7 +61,7 @@ for R1_FILE in "$FASTQ_DIR"/*{_1.fastq.gz,_1.fq.gz,_R1_*.fastq.gz,_R1_*.fq.gz}; 
     # Activate the Conda environment
     echo "Activating the power of Salmon..."
     source "$(conda info --base)/etc/profile.d/conda.sh"
-    conda activate salmon
+    conda activate raptor_quant
 
     # Run Salmon quantification
     echo "Running Salmon for $SAMPLE_NAME..."
