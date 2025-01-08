@@ -30,13 +30,20 @@ You will be asked several questions during the process. The workflow changes dep
 - **Quality analysis with FASTQC/MULTIQC** - Check the quality of your data. Results are stored in the _./output_ directory. FASTQC provides individual results, while MULTIQC provides combined results. Two rounds of quality checks are performed (if trimming is done), ensuring that the trimmed data is also assessed.
 - **Trimming** -  Your raw data could be trimmed with Trim Galore! The pipeline is set up to do this automatically, if you select so. The trimmed data will be used for further analysis.
 - **Salmon** - You will be asked to choose between Ensembl and RefSeq data annotation, as these two differ. Both annotations are created with k=23. Information about the annotations used is in _./data/salmon/About.txt_. Auxiliary information about each Salmon run is included in the individual result files.
-- **Editing results** - Salmon outputs individual sample results. To analyze your results and search for the transcript(s) of your choice, enter the exact transcript ID. Note:
+- **Editing results** – Salmon outputs individual sample results. To analyze your results and search for the transcript(s) of your choice, enter the exact transcript ID. Note:
   - If you selected Ensembl as the annotation, enter the Ensembl transcript ID.
   - If you selected RefSeq, enter the correct RefSeq transcript ID.
 
 - Additional information about specific annotation can be found here:
 	- https://www.ncbi.nlm.nih.gov/books/NBK50679/ for RefSeq
  	- https://www.ensembl.org/info/genome/genebuild/index.html for Ensembl.
+
+# Results
+Generally, everything produced by this pipeline (except trimmed data) can be found in the ./output directory. Results from Salmon specifically are located in _./output/salmon_results_. The results for each sample are stored individually. However, if the user chooses to analyze the data, which is the final step of the pipeline, and provides a transcript ID, two additional files are created during the workflow:
+1) combined_results.tsv – A merged results file containing data from every sample processed in the run. The file is organized as a table with several columns, similar to the standard quant.sf file from Salmon. These columns include the name of the sample, transcript IDs, TPM (transcripts per million), and NumReads (number of reads).
+2) filtered_results.tsv – A filtered results file displaying only the IDs provided by the user for clarity. This file has the same columns as combined_results.tsv.
+
+An example of both files can be found in the _./output/salmon_results_ directory.
 
 
 **Happy quanting!**
