@@ -35,7 +35,7 @@ if [ ! -d "$INDEX_DIR" ]; then
 fi
 
 # Iterate over all unique sample prefixes for R1 files (accepting multiple naming conventions)
-for R1_FILE in "$FASTQ_DIR"/*{_1.fastq.gz,_1.fq.gz,_R1_*.fastq.gz,_R1_*.fq.gz}; do
+for R1_FILE in "$FASTQ_DIR"/*{_1.fastq.gz,_1.fq.gz,_R1_*.fastq.gz,_R1_*.fq.gz,_R1.fq.gz,_R1.fastq.gz}; do
     # Skip if no matches
     [ -e "$R1_FILE" ] || continue
 
@@ -44,7 +44,11 @@ for R1_FILE in "$FASTQ_DIR"/*{_1.fastq.gz,_1.fq.gz,_R1_*.fastq.gz,_R1_*.fq.gz}; 
     R2_FILE="${R2_FILE/R1_001_val_1.fq.gz/R2_001_val_2.fq.gz}"
     R2_FILE="${R2_FILE/_1_val_1.fastq.gz/_2_val_2.fastq.gz}"
     R2_FILE="${R2_FILE/R1_001_val_1.fastq.gz/R2_001_val_2.fastq.gz}"
-    
+    R2_FILE="${R2_FILE/R1_001.fastq.gz/R2_001.fastq.gz}"
+    R2_FILE="${R2_FILE/R1_001.fq.gz/R2_001.fq.gz}"
+    R2_FILE="${R2_FILE/R1.fastq.gz/R2.fastq.gz}"
+    R2_FILE="${R2_FILE/R1.fq.gz/R2.fq.gz}"
+
     # Check if the R2 file exists
     if [ ! -f "$R2_FILE" ]; then
         echo "Warning: R2 file $R2_FILE not found for R1 file $R1_FILE. Skipping..."
