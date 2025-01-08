@@ -161,6 +161,8 @@ if [[ "$check_quality" == "yes" ]]; then
     "$script_dir/MULTIQC3.sh"
     echo "Quality check completed. Proceeding to the next step."
 
+fi
+
 if [[ "$analyze_data" == "yes" ]]; then
     echo "Creating combined table from your Salmon results..."
     "$script_dir/Compiling.sh"
