@@ -2,10 +2,10 @@
 A pipeline developed for flawless downstream analysis of bulk RNAseq data. It is primarily designed for people with no major IT skills, as it requires only a few basic edits on the user’s part.
 
 Based on your preferences, the pipeline can:
-	•	Analyze the quality of your data via FASTQC and MULTIQC.
-	•	Trim your data with Trim Galore!
-	•	Compute the quantity of transcripts present in your data with Salmon.
-	•	Create a large table containing results from Salmon for every sample and search for desired transcripts.
+- Analyze the quality of your data via FASTQC and MULTIQC.
+- Trim your data with Trim Galore!
+- Compute the quantity of transcripts present in your data with Salmon.
+- Create a large table containing results from Salmon for every sample and search for desired transcripts.
  ___________________
 
 # How to do it
@@ -34,9 +34,9 @@ You will be asked several questions during the process. The workflow changes dep
   - If you selected Ensembl as the annotation, enter the Ensembl transcript ID.
   - If you selected RefSeq, enter the correct RefSeq transcript ID.
 
-Additional information about specific annotation can be found here:
-- https://www.ncbi.nlm.nih.gov/books/NBK50679/ for RefSeq
-- https://www.ensembl.org/info/genome/genebuild/index.html for Ensembl.
+- Additional information about specific annotation can be found here:
+	- https://www.ncbi.nlm.nih.gov/books/NBK50679/ for RefSeq
+ 	- https://www.ensembl.org/info/genome/genebuild/index.html for Ensembl.
 
 
 **Happy quanting!**
