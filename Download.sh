@@ -6,6 +6,24 @@ OUTPUT_DIR="data/raw_fastq"
 # Input file containing the URLs
 INPUT_FILE="configs/links.txt"
 
+# Check if curl is installed
+if ! command -v curl &> /dev/null; then
+    echo "curl is not installed. Attempting to install it..."
+    if command -v apt-get &> /dev/null; then
+        sudo apt-get update
+        sudo apt-get install -y curl
+    elif command -v yum &> /dev/null; then
+        sudo yum install -y curl
+    elif command -v brew &> /dev/null; then
+        brew install curl
+    else
+        echo "Package manager not found. Please install curl manually."
+        exit 1
+    fi
+else
+    echo "curl is already installed. Proceeding with the script..."
+fi
+
 # Create the output directory if it doesn't exist
 if [[ ! -d "$OUTPUT_DIR" ]]; then
     mkdir -p "$OUTPUT_DIR"
