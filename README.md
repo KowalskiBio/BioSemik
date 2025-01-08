@@ -9,6 +9,9 @@ Based on your preferences, the pipeline can:
  ___________________
 
 # How to do it
+Firstly clone the repository via git:
+
+	git clone https://github.com/KowalskiBio/RaptorQuant
 
 ## 1) Get your data
 - **If you want to download the data**: Provide URLs from ENA in the prepared file located in _./configs/links.txt_ (two examples are already present in the file). Please ensure that the data is in .gz format. Supposing you are in the RaptorQuant directory, run the following commands:
