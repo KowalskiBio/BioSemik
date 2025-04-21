@@ -51,6 +51,9 @@ An example of both files can be found in the _./output/salmon_results_ directory
 
 **Happy quanting!**
 
+![Uploading image.png…]()
+
+
 
 
 
