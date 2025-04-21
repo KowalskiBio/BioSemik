@@ -51,7 +51,8 @@ An example of both files can be found in the _./output/salmon_results_ directory
 
 **Happy quanting!**
 
-![Uploading image.png…]()
+![7E1640F8-D71F-4E03-859A-34C852B6A4C9](https://github.com/user-attachments/assets/e0420a5f-b6c2-40cc-87c5-1894d1719c24)
+
 
 
 
