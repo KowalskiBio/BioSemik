@@ -1,4 +1,4 @@
-# RaptorQuant 
+# BioŠemík
 A pipeline developed for flawless downstream analysis of bulk RNAseq data. It is primarily designed for people with no major IT skills, as it requires only a few basic edits on the user’s part.
 
 Based on your preferences, the pipeline can:
@@ -11,10 +11,10 @@ Based on your preferences, the pipeline can:
 # How to do it
 Firstly clone the repository via git:
 
-	git clone https://github.com/KowalskiBio/RaptorQuant
+	git clone https://github.com/KowalskiBio/BioSemik
 
 ## 1) Get your data
-- **If you want to download the data**: Provide URLs from ENA in the prepared file located in _./configs/links.txt_ (two examples are already present in the file). Please ensure that the data is in .gz format. Supposing you are in the RaptorQuant directory, run the following commands:
+- **If you want to download the data**: Provide URLs from ENA in the prepared file located in _./configs/links.txt_ (two examples are already present in the file). Please ensure that the data is in .gz format. Supposing you are in the BioSemik directory, run the following commands:
 
       chmod +x Download.sh
       ./Download.sh
