@@ -21,10 +21,25 @@ Firstly clone the repository via git:
 
 - **If you provide your own data**: Your files need to be in .fastq.gz or .fq.gz format for downstream analysis. If trimming is required, place your data in _./data/raw_fastq._ If no trimming is required, place your data in _./data/trimmed_fastq._ The pipeline starts from this directory.
 
-## 2) Run the pipeline
+
+## 2) Prepare your index
+- You can use Salmon on whichever organism you please. In the main directory, create new index directory:
+
+		mkdir index
+  		cd index
+- Then, inside your index directory:
+  
+		wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_genomic.fna.gz
+		wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_rna.fna.gz
+  		gunzip GCF_000001405.40_GRCh38.p14_genomic.fna.gz
+  		gunzip GCF_000001405.40_GRCh38.p14_rna.fna.gz
+		grep "^>" GCF_000001405.40_GRCh38.p14_genomic.fna | cut -d " " -f 1 > decoys_NCBI.txt
+		sed -i.bak -e 's/>//g' decoys_NCBI.txt
+
+## 3) Run the pipeline
 To run the pipeline, enter the following commands, assuming you are in the RaptorQuant directory:
 
-      chmod +x ./scripts/*.sh
+	chmod +x ./scripts/*.sh
       chmod +x Run.sh
       ./Run.sh
 
