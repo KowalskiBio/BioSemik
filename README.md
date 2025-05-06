@@ -35,6 +35,9 @@ Firstly clone the repository via git:
   		gunzip GCF_000001405.40_GRCh38.p14_rna.fna.gz
 		grep "^>" GCF_000001405.40_GRCh38.p14_genomic.fna | cut -d " " -f 1 > decoys_NCBI.txt
 		sed -i.bak -e 's/>//g' decoys_NCBI.txt
+- Concatenate the genome with the transcriptome
+  
+ 		cat GRCh38_latest_rna.fna GCF_000001405.40_GRCh38.p14_genomic.fna | gzip > gentrome_NCBI.fna.gz
 
 ## 3) Run the pipeline
 To run the pipeline, enter the following commands, assuming you are in the RaptorQuant directory:
